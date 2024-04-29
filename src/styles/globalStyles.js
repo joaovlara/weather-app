@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     * {
+        padding: 0;
+        margin: 0;
         font-family: 'Open Sans', sans-serif;
-        text-decoration: none;
-        /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
     }
 `;
