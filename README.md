@@ -31,6 +31,9 @@ Você precisará obter uma chave de API gratuita do OpenWeatherMap para usar est
 const key = "YOUR_API_KEY";
 ```
 
+- **Documentação da API**: https://openweathermap.org/api
+
+
 ## Execução:
 
 Após configurar a chave da API, você pode iniciar o aplicativo: 

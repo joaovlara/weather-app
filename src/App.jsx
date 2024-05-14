@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Content, Card, CardInfos, CardWeather, InputCity, SearchBtn, SearchContainer, StyledWeatherIcon, TextInfos, TitleApp } from './styles/styles';
 
-const key = "5dbb806f39a96dcb93ce9e997b815519";
+const key = "5dbb806f39a96dcb93ce9e997b815519"; // Chave da API do OpenWeatherMap
 
 function App() {
   const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState(null);
 
+  // Função para buscar os dados do clima da cidade
   const buscarCity = async () => {
     try {
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`);
-      setWeatherData(response.data);
+      setWeatherData(response.data); //Recebe os dados da API e armazena no objeto weatherData
     } catch (error) {
       console.error('Erro ao buscar dados do clima:', error);
     }
